@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>RR Automotive | Tecnologia Automotiva Nacional</title>
+  <title>RR Automotive | Diagnostico, gestao e tecnologia automotiva</title>
   <meta name="description" content="Tecnologia automotiva nacional para diagnostico, gestao e evolucao das oficinas. Conheca RR OBD PRO e RR Manager.">
-  <meta name="theme-color" content="#060a12">
+  <meta name="theme-color" content="#050912">
   <link rel="icon" type="image/png" href="logo-rr-automotive.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,202 +13,223 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <nav class="top-nav" data-header>
-    <a class="nav-brand" href="#inicio" aria-label="RR Automotive">
+  <header class="site-header" data-header>
+    <a class="brand" href="#inicio" aria-label="RR Automotive">
       <img src="logo-rr-automotive.png" alt="RR Automotive">
-      <div>
-        <strong><em>RR</em> Automotive</strong>
-        <span>Tecnologia automotiva · Paixao por carros</span>
-      </div>
+      <span><em>RR</em> Automotive</span>
+      <small>Paixao por carros</small>
     </a>
 
     <button class="nav-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" data-nav-toggle>
-      <i></i><i></i>
+      <span></span>
+      <span></span>
     </button>
 
-    <div class="nav-links" data-nav>
+    <nav class="main-nav" aria-label="Navegacao principal" data-nav>
       <a href="#sobre">Sobre</a>
       <a href="#produtos">Produtos</a>
       <a href="#ecossistema">Ecossistema</a>
       <a href="#contato">Contato</a>
-      <a class="nav-social" href="https://instagram.com/rrautomotivebr" target="_blank" rel="noopener">@rrautomotivebr</a>
-      <a class="nav-cta" href="https://wa.me/5531997851561?text=Ola!%20Quero%20conhecer%20a%20RR%20Automotive" target="_blank" rel="noopener">Falar no WhatsApp</a>
-    </div>
-  </nav>
+      <a class="nav-ig" href="https://instagram.com/rrautomotivebr" target="_blank" rel="noopener">@rrautomotivebr</a>
+      <a class="nav-cta" href="https://wa.me/5531997851561?text=Ola!%20Quero%20conhecer%20a%20RR%20Automotive" target="_blank" rel="noopener">WhatsApp</a>
+    </nav>
+  </header>
 
   <main id="inicio">
     <section class="hero">
-      <div class="hero-glow-r"></div>
-      <div class="hero-glow-l"></div>
-
-      <div class="hero-left reveal visible">
-        <div class="hero-eyebrow">Tecnologia automotiva nacional</div>
-        <h1 class="hero-title">
-          <span>RR</span>
-          <span>Automotive</span>
-        </h1>
-        <p class="hero-subtitle">Tecnologia automotiva nacional para diagnostico, gestao e evolucao das oficinas.</p>
-        <p class="hero-copy">A RR Automotive desenvolve solucoes em hardware e software para o setor automotivo, unindo engenharia, pratica de oficina e inovacao nacional.</p>
-
-        <div class="hero-badges">
-          <span>Engenharia nacional</span>
-          <span>Hardware + software</span>
-          <span>Oficinas e reparadores</span>
-          <span>Suporte proximo</span>
-        </div>
-
+      <div class="grid-bg" aria-hidden="true"></div>
+      <div class="hero-copy reveal visible">
+        <div class="tech-line">RR Automotive</div>
+        <h1>Tecnologia automotiva nacional para diagnostico, gestao e evolucao das oficinas.</h1>
+        <p>A RR Automotive desenvolve solucoes em hardware e software para o setor automotivo, unindo engenharia, pratica de oficina e inovacao nacional.</p>
         <div class="hero-actions">
           <a class="btn btn-green" href="#produtos">Conhecer produtos</a>
           <a class="btn btn-ghost" href="https://wa.me/5531997851561?text=Ola!%20Quero%20conhecer%20a%20RR%20Automotive" target="_blank" rel="noopener">Falar no WhatsApp</a>
         </div>
       </div>
 
-      <div class="hero-right reveal-r visible">
-        <div class="product-scene">
-          <div class="radar-ring"></div>
-          <div class="radar-ring"></div>
-          <img class="obd-product" src="produto-rr-obd-pro.png" alt="RR OBD PRO">
-          <article class="manager-mini">
-            <header><span>RR Manager</span><strong>Fluxo do mes</strong></header>
-            <b>R$ 18.460</b>
-            <div class="mini-bars"><i></i><i></i><i></i><i></i></div>
-            <p><span>Orcamentos</span><strong>67%</strong></p>
-          </article>
-        </div>
+      <div class="hero-products reveal visible" aria-label="Produtos RR Automotive">
+        <article class="hero-product hero-manager">
+          <span>RR Manager&reg;</span>
+          <strong>Gestao de oficina</strong>
+          <small>Clientes · Veiculos · Orcamentos</small>
+        </article>
+        <article class="hero-product hero-obd">
+          <img src="produto-rr-obd-pro.png" alt="RR OBD PRO">
+          <span>RR OBD PRO&reg;</span>
+          <strong>Diagnostico automotivo</strong>
+          <small>OBD-II · CAN · Dados em tempo real</small>
+        </article>
       </div>
-    </section>
-
-    <section class="stats-bar" aria-label="Resumo RR Automotive">
-      <div><strong>Diagnostico</strong><span>RR OBD PRO</span></div>
-      <div><strong>Gestao</strong><span>RR Manager</span></div>
-      <div><strong>Brasil</strong><span>Engenharia nacional</span></div>
-      <div><strong>Oficina</strong><span>Uso real no reparador</span></div>
     </section>
 
     <section class="section about" id="sobre">
-      <div class="section-head reveal">
-        <span>Sobre a RR Automotive</span>
+      <div class="section-copy reveal">
+        <div class="tech-line">Sobre a RR Automotive</div>
         <h2>Empresa brasileira de tecnologia automotiva.</h2>
         <p>Desenvolvemos hardware e software para oficinas, reparadores e profissionais que precisam de solucoes praticas, diretas e conectadas com a rotina real do setor automotivo.</p>
       </div>
-      <div class="feature-grid reveal">
-        <article><b>Hardware</b><p>Interfaces e equipamentos para diagnostico automotivo.</p></article>
-        <article><b>Software</b><p>Sistemas para gestao, organizacao e acompanhamento da oficina.</p></article>
-        <article><b>Pratica</b><p>Solucoes pensadas para o reparador brasileiro.</p></article>
+      <div class="info-grid reveal">
+        <div><strong>Hardware</strong><span>Interfaces e equipamentos para diagnostico automotivo.</span></div>
+        <div><strong>Software</strong><span>Sistemas para gestao, organizacao e acompanhamento da oficina.</span></div>
+        <div><strong>Oficina</strong><span>Foco em reparadores, processos simples e aplicacao pratica.</span></div>
       </div>
     </section>
 
-    <section class="section products" id="produtos">
-      <div class="section-head reveal">
-        <span>Produtos</span>
-        <h2>Duas frentes. Uma marca.</h2>
+
+    <section class="pricing-strip" aria-label="Cards de preco dos produtos RR Automotive">
+      <article class="price-card price-manager reveal">
+        <span>Acesso mensal</span>
+        <strong>R$ 39,90<small>/mes</small></strong>
+        <p>Inclui gestao de clientes, veiculos, orcamentos e financeiro.</p>
+        <div class="price-pills">
+          <em>Sem fidelidade</em>
+          <em>Acesso com login</em>
+          <em>Dados sincronizados</em>
+          <em>Suporte pelo WhatsApp</em>
+        </div>
+        <a class="btn btn-blue" href="https://rrreparacaomanager.com.br/" target="_blank" rel="noopener">Solicitar acesso</a>
+      </article>
+
+      <article class="price-card price-obd reveal">
+        <span>Promocao de lancamento</span>
+        <p class="price-from">De <s>R$ 649,90</s> por apenas</p>
+        <strong>R$ 579,90</strong>
+        <p><b>ou 12x de R$ 48,32</b> no cartao sem juros</p>
+        <div class="price-pills">
+          <em>Frete gratis para todo o Brasil</em>
+          <em>12 meses de garantia</em>
+          <em>Suporte tecnico</em>
+        </div>
+        <a class="btn btn-green" href="https://rrautomotive.com.br/" target="_blank" rel="noopener">Pedir agora</a>
+      </article>
+    </section>
+    <section class="products" id="produtos">
+      <article class="product-card obd-card reveal">
+        <div class="product-top product-top-obd"><span>Interface de diagnostico</span></div>
+        <h2>RR OBD PRO&reg;</h2>
+        <p>Scanner automotivo profissional para leitura OBD-II/CAN com dashboard web, dados em tempo real e acesso direto pelo celular.</p>
+        <ul>
+          <li>Leitura OBD-II/CAN</li>
+          <li>Dashboard web</li>
+          <li>Dados em tempo real</li>
+          <li>Produto nacional</li>
+        </ul>
+        <a class="btn btn-green" href="https://rrautomotive.com.br/" target="_blank" rel="noopener">Acessar landing page</a>
+      </article>
+
+      <article class="product-card manager-card reveal">
+        <div class="product-top">
+          <img src="logo-rr-manager.png" alt="RR Manager">
+          <span>Software de gestao</span>
+        </div>
+        <h2>RR Manager&reg;</h2>
+        <p>Sistema de gestao para oficinas com clientes, veiculos, orcamentos, OS e historico para profissionalizar a operacao.</p>
+        <ul>
+          <li>Clientes e veiculos</li>
+          <li>Orcamentos e OS</li>
+          <li>Historico da oficina</li>
+          <li>Organizacao profissional</li>
+        </ul>
+        <div class="manager-dashboard" aria-label="Preview do dashboard RR Manager">
+          <div class="dash-panel dash-orcamentos">
+            <header><span>Orcamentos</span><strong>Painel de controle</strong></header>
+            <div class="dash-kpis">
+              <div><small>Pre-orc.</small><b>12</b><em>Aguardando decisao</em></div>
+              <div><small>Aprovados</small><b>8</b><em>Receita gerada</em></div>
+              <div><small>Conversao</small><b>67%</b><em>Mes atual</em></div>
+            </div>
+            <p><i></i><span>Hilux 2020</span><strong>R$ 3.420</strong></p>
+            <p><i class="ok"></i><span>Civic 2018</span><strong>R$ 2.840</strong></p>
+          </div>
+          <div class="dash-panel dash-financeiro">
+            <header><span>Financeiro</span><strong>Fluxo do mes</strong></header>
+            <div class="dash-total">R$ 18.460<small>Saldo projetado</small></div>
+            <div class="dash-bars"><i></i><i></i><i></i><i></i><i></i></div>
+          </div>
+          <div class="dash-panel dash-cliente">
+            <header><span>Clientes</span><strong>Historico completo</strong></header>
+            <div class="dash-client"><b>Ryan Costa</b><small>BMW 320i 2019 | Placa RRM-2026</small></div>
+            <ul><li>Ultimo servico: revisao completa</li><li>Dados sincronizados na nuvem</li></ul>
+          </div>
+          <div class="dash-panel dash-pdf">
+            <header><span>PDF</span><strong>Orcamento #0248</strong></header>
+            <div class="pdf-paper"><b>RR Manager</b><small>Cliente exemplo · Honda Civic 2018</small><strong>R$ 2.840</strong></div>
+          </div>
+        </div>        <a class="btn btn-blue" href="https://rrreparacaomanager.com.br/" target="_blank" rel="noopener">Acessar landing page</a>
+      </article>
+    </section>
+
+    <section class="section differentials" id="diferenciais">
+      <div class="section-copy reveal">
+        <div class="tech-line">Diferenciais</div>
+        <h2>Criado para o reparador brasileiro.</h2>
       </div>
-
-      <div class="product-grid">
-        <article class="product-card obd-card reveal">
-          <div class="product-label">Interface de diagnostico</div>
-          <h3>RR OBD PRO<sup>®</sup></h3>
-          <p>Scanner automotivo profissional para leitura OBD-II/CAN com dashboard web, dados em tempo real e acesso direto pelo celular.</p>
-          <ul>
-            <li>Leitura OBD-II/CAN</li>
-            <li>Dashboard web</li>
-            <li>Dados em tempo real</li>
-            <li>Produto nacional</li>
-          </ul>
-          <div class="price-box">
-            <span>Promocao de lancamento</span>
-            <strong>R$ 579,90</strong>
-            <small>12x de R$ 48,32 · suporte tecnico</small>
-          </div>
-          <a class="btn btn-green" href="https://rrautomotive.com.br/" target="_blank" rel="noopener">Acessar RR OBD PRO</a>
-        </article>
-
-        <article class="product-card manager-card reveal">
-          <div class="product-label">Software de gestao</div>
-          <h3>RR Manager<sup>®</sup></h3>
-          <p>Sistema de gestao para oficinas com clientes, veiculos, orcamentos, OS e historico para profissionalizar a operacao.</p>
-          <ul>
-            <li>Clientes e veiculos</li>
-            <li>Orcamentos e OS</li>
-            <li>Historico da oficina</li>
-            <li>Organizacao profissional</li>
-          </ul>
-          <div class="manager-preview">
-            <header><span>Orcamentos</span><strong>Painel</strong></header>
-            <div><b>12</b><b>8</b><b>67%</b></div>
-            <p><span>Hilux 2020</span><strong>R$ 3.420</strong></p>
-            <p><span>Civic 2018</span><strong>R$ 2.840</strong></p>
-          </div>
-          <div class="price-box compact">
-            <span>Acesso mensal</span>
-            <strong>R$ 39,90</strong>
-            <small>sem fidelidade · suporte pelo WhatsApp</small>
-          </div>
-          <a class="btn btn-blue" href="https://rrreparacaomanager.com.br/" target="_blank" rel="noopener">Acessar RR Manager</a>
-        </article>
+      <div class="points-grid reveal">
+        <div><strong>Engenharia nacional</strong><span>Desenvolvimento pensado para o mercado brasileiro.</span></div>
+        <div><strong>Desenvolvimento proprio</strong><span>Hardware e software evoluindo dentro do mesmo ecossistema.</span></div>
+        <div><strong>Pratica de oficina</strong><span>Solucoes feitas para uso real, nao para vitrine.</span></div>
+        <div><strong>Ecossistema RR</strong><span>Diagnostico, gestao e tecnologia caminhando juntos.</span></div>
       </div>
     </section>
 
     <section class="section ecosystem" id="ecossistema">
-      <div class="section-head reveal">
-        <span>Ecossistema RR Automotive</span>
+      <div class="section-copy reveal">
+        <div class="tech-line">Ecossistema RR Automotive</div>
         <h2>Diagnostico conectado a gestao.</h2>
         <p>O RR OBD PRO coleta dados. O RR Manager organiza a oficina. A RR Automotive conecta diagnostico, gestao e tecnologia para dar mais controle ao reparador.</p>
       </div>
-      <div class="flow reveal">
-        <article><span>01</span><b>RR OBD PRO</b><p>Coleta dados do veiculo.</p></article>
-        <article><span>02</span><b>RR Manager</b><p>Organiza clientes, OS e historico.</p></article>
-        <article><span>03</span><b>RR Automotive</b><p>Conecta tecnologia e evolucao.</p></article>
+      <div class="flow reveal" aria-label="Fluxo do ecossistema RR Automotive">
+        <div><span>01</span><strong>RR OBD PRO</strong><small>Coleta dados do veiculo</small></div>
+        <div><span>02</span><strong>RR Manager</strong><small>Organiza clientes, OS e historico</small></div>
+        <div><span>03</span><strong>RR Automotive</strong><small>Conecta tecnologia e evolucao</small></div>
       </div>
     </section>
 
-    <section class="section trust" id="confianca">
-      <div class="section-head reveal">
-        <span>Confianca</span>
+    <section class="section confidence" id="confianca">
+      <div class="section-copy reveal">
+        <div class="tech-line">Confianca</div>
         <h2>Produto nacional, suporte proximo e evolucao constante.</h2>
       </div>
-      <div class="trust-grid reveal">
+      <div class="confidence-list reveal">
         <div>Produto nacional</div>
-        <div>Desenvolvimento proprio</div>
-        <div>Testado em oficina</div>
-        <div>Suporte direto</div>
+        <div>Suporte proximo</div>
+        <div>Desenvolvimento em evolucao</div>
+        <div>Testado em ambiente real de oficina</div>
       </div>
     </section>
 
-    <section class="cta-section" id="contato">
-      <div class="section-head centered reveal">
-        <span>Contato</span>
-        <h2>Fale com a RR Automotive.</h2>
-        <p>Conheca os produtos, acompanhe a marca e escolha a solucao ideal para sua oficina.</p>
-      </div>
-      <div class="contact-actions reveal">
+    <section class="final-cta" id="contato">
+      <div class="tech-line reveal">Contato</div>
+      <h2 class="reveal">Fale com a RR Automotive.</h2>
+      <p class="reveal">Conheca os produtos, acompanhe a marca e escolha a solucao ideal para sua oficina.</p>
+      <div class="contact-grid reveal">
         <a class="btn btn-green" href="https://wa.me/5531997851561?text=Ola!%20Quero%20conhecer%20as%20solucoes%20da%20RR%20Automotive" target="_blank" rel="noopener">WhatsApp</a>
         <a class="btn btn-ghost" href="https://instagram.com/rrautomotivebr" target="_blank" rel="noopener">Instagram</a>
         <a class="btn btn-ghost" href="https://linktr.ee/rrautomotivebr" target="_blank" rel="noopener">Linktree</a>
+        <a class="btn btn-ghost" href="mailto:contato@rrautomotive.com.br">E-mail</a>
         <a class="btn btn-blue" href="https://rrautomotive.com.br/" target="_blank" rel="noopener">RR OBD PRO</a>
         <a class="btn btn-blue" href="https://rrreparacaomanager.com.br/" target="_blank" rel="noopener">RR Manager</a>
       </div>
     </section>
   </main>
 
-  <footer class="footer">
-    <div>
-      <strong><em>RR</em> Automotive</strong>
-      <span>Paixao por carros · Tecnologia automotiva</span>
-    </div>
-    <nav>
+  <footer class="site-footer">
+    <strong><em>RR</em> Automotive</strong>
+    <nav aria-label="Links do rodape">
       <a href="#sobre">Sobre</a>
       <a href="#produtos">Produtos</a>
       <a href="#ecossistema">Ecossistema</a>
       <a href="#contato">Contato</a>
     </nav>
-    <small>(c) 2026 RR Automotive</small>
+    <small>(c) 2026 RR Automotive. Todos os direitos reservados.</small>
   </footer>
 
-  <a class="float-wa" href="https://wa.me/5531997851561?text=Ola!%20Tenho%20interesse%20nas%20solucoes%20da%20RR%20Automotive" target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+  <a class="float-contact" href="https://wa.me/5531997851561?text=Ola!%20Tenho%20interesse%20nas%20solucoes%20da%20RR%20Automotive" target="_blank" rel="noopener" aria-label="Falar com a RR Automotive pelo WhatsApp">
     <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347M12.05 21.785h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884"/></svg>
   </a>
 
   <script src="script.js"></script>
 </body>
 </html>
+
