@@ -107,48 +107,98 @@
       </section>
       <section class="products" id="produtos">
         <article class="product-card obd-card reveal">
-          <div class="product-top product-top-obd"><span>01 · Interface de diagnóstico</span></div>
+          <div class="product-top"><span>01 · Diagnóstico automotivo</span><b>Hardware nacional</b></div>
           <div class="product-visual obd-showcase">
             <img src="produto-rr-obd-pro.png" alt="Scanner RR OBD PRO">
-            <small>Hardware nacional</small>
+            <small>Wi-Fi próprio · sem app · sem internet</small>
           </div>
           <h2>RR OBD PRO®</h2>
-          <p>Diagnóstico profissional direto no celular. Sem app, sem internet e sem fios.</p>
-          <ul>
-            <li>OBD-II e CAN Bus</li><li>Dados e gráficos em tempo real</li>
-            <li>Dashboard web próprio</li><li>Produto nacional e suporte técnico</li>
+          <p>Dados técnicos do veículo no celular para investigar falhas com mais clareza e agilidade.</p>
+          <ul class="feature-checklist">
+            <li><strong>Falhas completas</strong><span>DTCs armazenados, pendentes e permanentes, com leitura e limpeza.</span></li>
+            <li><strong>Identificação técnica</strong><span>VIN, ECU, freeze frame, readiness e Mode 06.</span></li>
+            <li><strong>Dados ao vivo</strong><span>Motor, temperatura, combustível, O₂, emissões, turbo e elétrica.</span></li>
+            <li><strong>Ferramentas profissionais</strong><span>Pré-scan, relatório, gráficos, CSV, CAN Raw e atualização OTA.</span></li>
           </ul>
-          <div class="product-offer">
-            <small>Preço de lançamento</small><strong>R$ 579,90</strong>
-            <span>12x de R$ 48,32 · frete grátis</span>
-          </div>
-          <a class="btn btn-green" href="https://rrobdpro.com.br/" target="_blank" rel="noopener">Conhecer o RR OBD PRO ↗</a>
+          <p class="compat-note">Recursos variam conforme os módulos, protocolos e PIDs disponibilizados pelo veículo.</p>
+          <div class="product-offer"><small>Preço de lançamento</small><strong>R$ 579,90</strong><span>12x de R$ 48,32 · frete grátis</span></div>
+          <a class="btn btn-green" href="https://rrobdpro.com.br/" target="_blank" rel="noopener">Explorar o RR OBD PRO ↗</a>
         </article>
         <article class="product-card manager-card reveal">
-          <div class="product-top"><span>02 · Software de gestão</span></div>
+          <div class="product-top"><span>02 · Gestão para oficinas</span><b>Software na nuvem</b></div>
           <div class="product-visual manager-visual">
             <img src="rr-manager-dashboard.png" alt="Painel de gestão do RR Manager">
-            <small>Gestão completa da oficina</small>
+            <small>Da entrada do cliente ao resultado financeiro</small>
           </div>
           <h2>RR Manager®</h2>
-          <p>Orçamentos profissionais, clientes, veículos e financeiro em um só lugar.</p>
-          <ul>
-            <li>Orçamentos enviados pelo WhatsApp</li><li>Margem e lucro automáticos</li>
-            <li>Marca, Pix e dados da sua oficina</li><li>Acesso pelo celular e computador</li>
+          <p>Transforme atendimento, orçamento e financeiro em um processo organizado e profissional.</p>
+          <ul class="feature-checklist">
+            <li><strong>Venda pelo WhatsApp</strong><span>Mensagem pronta e link público para o orçamento completo.</span></li>
+            <li><strong>Preço com margem</strong><span>Peças, horas, taxas, descontos e lucro calculados automaticamente.</span></li>
+            <li><strong>Documento da oficina</strong><span>Logo, dados, PDF e QR Code Pix personalizados.</span></li>
+            <li><strong>Financeiro integrado</strong><span>Receitas automáticas, despesas, gráficos e relatórios por período.</span></li>
           </ul>
-          <div class="product-offer manager-offer">
-            <small>Plano mensal · sem fidelidade</small><strong>R$ 39,90<em>/mês</em></strong>
-            <span>Acesso individual · suporte incluso</span>
-          </div>
-          <a class="btn btn-blue" href="https://rrreparacaomanager.com.br/" target="_blank" rel="noopener">Conhecer o RR Manager ↗</a>
+          <p class="compat-note manager-note">Acesso individual pelo navegador, com dados separados e sincronizados por oficina.</p>
+          <div class="product-offer manager-offer"><small>Plano mensal · sem fidelidade</small><strong>R$ 39,90<em>/mês</em></strong><span>Acesso individual · suporte incluso</span></div>
+          <a class="btn btn-blue" href="https://rrreparacaomanager.com.br/" target="_blank" rel="noopener">Explorar o RR Manager ↗</a>
         </article>
       </section>
-  <section class="section ecosystem" id="ecossistema">
+
+      <section class="product-proof" id="demonstracao">
+        <div class="proof-heading reveal">
+          <div class="tech-line">Veja funcionando</div>
+          <h2>Menos promessa.<br><span>Mais ferramenta real.</span></h2>
+          <p>Explore uma amostra dos recursos que já existem nos produtos RR.</p>
+        </div>
+        <div class="proof-grid">
+          <article class="obd-demo reveal" data-obd-demo>
+            <header class="demo-header"><div><small>RR OBD PRO®</small><strong>Diagnóstico ao vivo</strong></div><span><i></i> CAN conectado</span></header>
+            <nav class="demo-tabs" aria-label="Demonstração do RR OBD PRO">
+              <button class="active" type="button" data-demo-tab="motor">Dados ao vivo</button>
+              <button type="button" data-demo-tab="falhas">Falhas</button>
+              <button type="button" data-demo-tab="relatorio">Pré-scan</button>
+            </nav>
+            <div class="demo-panel active" data-demo-panel="motor">
+              <div class="live-kpis"><div><small>RPM</small><strong data-live-rpm>2840</strong></div><div><small>Arrefecimento</small><strong>87°C</strong></div><div><small>Bateria</small><strong>13,8V</strong></div><div><small>STFT B1</small><strong>+2,3%</strong></div></div>
+              <div class="live-chart" aria-label="Gráfico simulado de dados ao vivo"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+              <p>Motor · Temperaturas · Combustível · O₂ · Emissões · Ar · Turbo · Elétrico</p>
+            </div>
+            <div class="demo-panel" data-demo-panel="falhas">
+              <div class="scan-summary"><strong>2 falhas encontradas</strong><span>Armazenadas e pendentes</span></div>
+              <div class="fault-row"><b>P0302</b><div><strong>Falha de ignição — cilindro 2</strong><span>Verificar ignição, injeção e compressão.</span></div><em>Crítica</em></div>
+              <div class="fault-row"><b>P0133</b><div><strong>Resposta lenta do sensor O₂</strong><span>Banco 1 · Sensor 1 · guia técnico disponível.</span></div><em>Atenção</em></div>
+            </div>
+            <div class="demo-panel" data-demo-panel="relatorio">
+              <div class="vehicle-id"><span>Veículo identificado</span><strong>HONDA CIVIC 2018</strong><small>VIN 93HFC2F5XJZ000248 · ECU detectada</small></div>
+              <ul><li><span>Módulos consultados</span><b>4</b></li><li><span>Readiness completos</span><b>7/8</b></li><li><span>Freeze frame</span><b>Disponível</b></li><li><span>Relatório técnico</span><b>Pronto</b></li></ul>
+            </div>
+            <footer>Simulação visual. Dados e funções disponíveis dependem do veículo.</footer>
+          </article>
+
+          <article class="manager-demo reveal" data-margin-calculator>
+            <header class="demo-header"><div><small>RR MANAGER®</small><strong>Simule seu orçamento</strong></div><span>Margem em tempo real</span></header>
+            <div class="calculator-form">
+              <label>Custo das peças <span>R$</span><input type="number" min="0" step="10" value="280" data-calc="parts"></label>
+              <label>Margem nas peças <span>%</span><input type="number" min="0" step="1" value="45" data-calc="margin"></label>
+              <label>Horas de serviço <span>h</span><input type="number" min="0" step="0.5" value="3.5" data-calc="hours"></label>
+              <label>Valor da hora <span>R$</span><input type="number" min="0" step="10" value="120" data-calc="hourRate"></label>
+            </div>
+            <div class="calc-result">
+              <div><small>Peças com margem</small><strong data-result="partsPrice">R$ 406,00</strong></div>
+              <div><small>Mão de obra</small><strong data-result="labor">R$ 420,00</strong></div>
+              <div class="calc-total"><small>Total sugerido</small><strong data-result="total">R$ 826,00</strong></div>
+              <div><small>Resultado bruto*</small><strong data-result="profit">R$ 546,00</strong></div>
+            </div>
+            <div class="manager-delivery"><span>✓ Link pelo WhatsApp</span><span>✓ PDF com sua logo</span><span>✓ QR Code Pix</span><span>✓ Receita no financeiro</span></div>
+            <footer>*Simulação antes de outras despesas, impostos e custos da oficina.</footer>
+          </article>
+        </div>
+      </section>  <section class="section ecosystem" id="ecossistema">
     <div class="section-copy reveal">
       <div class="tech-line">Ecossistema RR</div>
       <h2>Informação que vira <span>resultado.</span>
     </h2>
-    <p>Uma jornada conectada para transformar dados técnicos em decisões melhores.</p>
+    <p>Duas ferramentas complementares para conduzir o trabalho técnico até a decisão comercial — cada uma com seu papel.</p><small class="ecosystem-clarity">As soluções funcionam de forma independente. O fluxo conecta o trabalho da oficina, sem sincronização automática de dados entre os produtos.</small>
   </div>
   <div class="flow reveal">
     <div>
@@ -159,12 +209,12 @@
     <div>
       <span>02</span>
       <strong>Organize</strong>
-      <small>Transforme o diagnóstico em orçamento e histórico.</small>
+      <small>Use o resultado técnico para montar o orçamento e registrar o histórico no RR Manager.</small>
     </div>
     <div>
       <span>03</span>
       <strong>Evolua</strong>
-      <small>Ganhe velocidade, controle e confiança.</small>
+      <small>Apresente o serviço, acompanhe a aprovação e controle o resultado da oficina.</small>
     </div>
   </div>
 </section>

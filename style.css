@@ -1816,3 +1816,148 @@ transparent 28rem),
     font-size:clamp(2.75rem,3vw,3.4rem);
   }
 }
+/* Experiencia comercial baseada nos recursos reais dos produtos. */
+.product-top b {
+  color:var(--muted);
+  font:600 .63rem "Share Tech Mono";
+  letter-spacing:1.3px;
+  text-transform:uppercase;
+}
+.feature-checklist {
+  gap:14px!important;
+}
+.feature-checklist li {
+  display:grid;
+  gap:2px;
+  padding:0 0 0 20px;
+}
+.feature-checklist li strong {
+  color:var(--text);
+  font-size:.94rem;
+}
+.feature-checklist li span {
+  color:var(--muted);
+  font-size:.8rem;
+  line-height:1.4;
+}
+.compat-note {
+  min-height:0!important;
+  margin:0 0 18px!important;
+  padding:12px 14px;
+  border:1px solid rgba(245,184,61,.2);
+  border-radius:6px;
+  color:#d7bd83!important;
+  background:rgba(245,184,61,.055);
+  font-size:.72rem!important;
+  line-height:1.45;
+}
+.compat-note::before { content:"Compatibilidade: "; color:var(--gold); font-weight:800; }
+.manager-note { border-color:rgba(47,124,246,.23); color:var(--muted2)!important; background:rgba(47,124,246,.055); }
+.manager-note::before { content:"Acesso: "; color:#60a5fa; }
+
+.product-proof {
+  position:relative;
+  padding:clamp(70px,9vw,125px) clamp(18px,4vw,60px);
+  overflow:hidden;
+  border-top:1px solid var(--border);
+  background:radial-gradient(circle at 25% 34%,rgba(0,200,255,.08),transparent 30rem),radial-gradient(circle at 78% 55%,rgba(47,124,246,.1),transparent 32rem),#070d18;
+}
+.product-proof::before {
+  content:"";
+  position:absolute;
+  inset:0;
+  opacity:.3;
+  background-image:linear-gradient(rgba(47,124,246,.12) 1px,transparent 1px),linear-gradient(90deg,rgba(47,124,246,.12) 1px,transparent 1px);
+  background-size:64px 64px;
+  mask-image:linear-gradient(to bottom,transparent,#000 18%,#000 82%,transparent);
+}
+.proof-heading,.proof-grid { position:relative; z-index:2; }
+.proof-heading { max-width:760px; margin:0 auto 46px; text-align:center; }
+.proof-heading .tech-line { justify-content:center; }
+.proof-heading h2 { margin:0; font-family:"Bebas Neue"; font-size:clamp(3.6rem,7vw,7rem); font-weight:400; line-height:.9; text-transform:uppercase; }
+.proof-heading h2 span { color:var(--cyan); }
+.proof-heading p { color:var(--muted2); font-size:1.06rem; }
+.proof-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:22px; max-width:1440px; margin:auto; }
+.obd-demo,.manager-demo { min-width:0; overflow:hidden; border:1px solid rgba(47,124,246,.32); border-radius:14px; background:linear-gradient(180deg,rgba(16,31,52,.96),rgba(6,14,27,.98)); box-shadow:0 28px 70px rgba(0,0,0,.3); }
+.demo-header { display:flex; align-items:center; justify-content:space-between; gap:18px; padding:20px 22px; border-bottom:1px solid var(--border); background:rgba(2,8,17,.4); }
+.demo-header div { display:grid; }
+.demo-header small { color:var(--cyan); font:700 .64rem "Share Tech Mono"; letter-spacing:2px; }
+.demo-header strong { font-size:1.22rem; }
+.demo-header > span { color:var(--muted2); font:600 .68rem "Share Tech Mono"; text-transform:uppercase; }
+.demo-header > span i { display:inline-block; width:8px; height:8px; margin-right:7px; border-radius:50%; background:var(--green); box-shadow:0 0 12px var(--green); animation:demoPulse 1.8s infinite; }
+@keyframes demoPulse { 50% { opacity:.38; } }
+.demo-tabs { display:grid; grid-template-columns:repeat(3,1fr); padding:12px; gap:8px; border-bottom:1px solid var(--border); }
+.demo-tabs button { min-height:40px; border:1px solid var(--border); border-radius:5px; color:var(--muted2); background:rgba(255,255,255,.025); font:700 .72rem "Exo 2"; cursor:pointer; }
+.demo-tabs button:hover,.demo-tabs button.active { color:#04111c; border-color:var(--cyan); background:var(--cyan); }
+.demo-panel { display:none; min-height:320px; padding:22px; }
+.demo-panel.active { display:block; animation:demoIn .25s ease; }
+@keyframes demoIn { from { opacity:0; transform:translateY(5px); } }
+.live-kpis { display:grid; grid-template-columns:repeat(4,1fr); gap:9px; }
+.live-kpis div { padding:14px 10px; border:1px solid var(--border); border-radius:7px; text-align:center; background:rgba(255,255,255,.025); }
+.live-kpis small { display:block; color:var(--muted); font:.58rem "Share Tech Mono"; text-transform:uppercase; }
+.live-kpis strong { display:block; color:var(--cyan); font:2rem "Bebas Neue"; }
+.live-chart { display:flex; align-items:end; gap:7px; height:138px; margin:18px 0 12px; padding:15px; border:1px solid rgba(0,200,255,.14); border-radius:7px; background:linear-gradient(rgba(0,200,255,.04) 1px,transparent 1px),#040b15; background-size:100% 25%; }
+.live-chart i { flex:1; height:var(--bar,45%); border-radius:3px 3px 0 0; background:linear-gradient(#00c8ff,#1957b7); transition:height .45s ease; }
+.live-chart i:nth-child(2n) { --bar:68%; }.live-chart i:nth-child(3n) { --bar:35%; }.live-chart i:nth-child(4n) { --bar:82%; }.live-chart i:nth-child(5n) { --bar:56%; }
+.demo-panel > p { margin:0; color:var(--muted); font:.64rem "Share Tech Mono"; letter-spacing:.7px; text-align:center; }
+.scan-summary,.vehicle-id { display:grid; gap:4px; margin-bottom:15px; padding:16px; border-left:3px solid var(--gold); background:rgba(245,184,61,.06); }
+.scan-summary strong,.vehicle-id strong { font-size:1.1rem; }
+.scan-summary span,.vehicle-id span,.vehicle-id small { color:var(--muted); font-size:.75rem; }
+.fault-row { display:grid; grid-template-columns:auto 1fr auto; gap:13px; align-items:start; margin-top:10px; padding:15px; border:1px solid var(--border); border-radius:7px; background:rgba(255,255,255,.025); }
+.fault-row > b { color:#ff6473; font:1.25rem "Share Tech Mono"; }
+.fault-row div { display:grid; gap:3px; }
+.fault-row div span { color:var(--muted); font-size:.76rem; }
+.fault-row em { color:var(--gold); font-size:.68rem; font-style:normal; text-transform:uppercase; }
+.vehicle-id { border-color:var(--cyan); background:rgba(0,200,255,.055); }
+.vehicle-id > span { color:var(--cyan); font-family:"Share Tech Mono"; text-transform:uppercase; }
+.demo-panel ul { display:grid; gap:8px; margin:0; padding:0; list-style:none; }
+.demo-panel ul li { display:flex; justify-content:space-between; gap:10px; padding:10px 12px; border-bottom:1px solid var(--border); color:var(--muted2); }
+.demo-panel ul b { color:var(--green); }
+.obd-demo > footer,.manager-demo > footer { padding:12px 20px; border-top:1px solid var(--border); color:var(--muted); font-size:.64rem; text-align:center; }
+.calculator-form { display:grid; grid-template-columns:1fr 1fr; gap:12px; padding:20px 22px 14px; }
+.calculator-form label { position:relative; display:grid; gap:6px; color:var(--muted2); font-size:.75rem; }
+.calculator-form label > span { position:absolute; right:12px; bottom:11px; color:var(--cyan); font:700 .66rem "Share Tech Mono"; pointer-events:none; }
+.calculator-form input { width:100%; min-height:44px; padding:0 42px 0 12px; border:1px solid var(--border); border-radius:5px; outline:none; color:var(--text); background:#07101c; font:700 1rem "Exo 2"; }
+.calculator-form input:focus { border-color:var(--blue); box-shadow:0 0 0 3px rgba(47,124,246,.1); }
+.calc-result { display:grid; grid-template-columns:1fr 1fr; gap:9px; padding:8px 22px 18px; }
+.calc-result > div { display:grid; gap:3px; padding:13px; border:1px solid var(--border); border-radius:7px; background:rgba(255,255,255,.025); }
+.calc-result small { color:var(--muted); font-size:.67rem; }
+.calc-result strong { color:#67e8d0; font:1.55rem "Bebas Neue"; letter-spacing:1px; }
+.calc-result .calc-total { border-color:rgba(37,211,102,.4); background:rgba(37,211,102,.07); }
+.calc-result .calc-total strong { color:var(--green); font-size:2rem; }
+.manager-delivery { display:grid; grid-template-columns:1fr 1fr; gap:7px 12px; margin:0 22px 20px; padding:15px; border:1px solid rgba(47,124,246,.22); border-radius:7px; color:var(--muted2); background:rgba(47,124,246,.05); font-size:.72rem; }
+
+@media(max-width:1040px) {
+  .proof-grid { grid-template-columns:1fr; }
+  .demo-panel { min-height:300px; }
+}
+@media(max-width:680px) {
+  .product-top { align-items:flex-start; }
+  .product-top b { margin-top:4px; }
+  .feature-checklist li span { font-size:.76rem; }
+  .product-proof { padding-inline:16px; }
+  .proof-heading { margin-bottom:30px; }
+  .proof-heading h2 { font-size:3.7rem; }
+  .demo-header { align-items:flex-start; padding:16px; }
+  .demo-header > span { text-align:right; }
+  .demo-tabs { overflow-x:auto; }
+  .demo-panel { min-height:350px; padding:16px; }
+  .live-kpis { grid-template-columns:1fr 1fr; }
+  .fault-row { grid-template-columns:auto 1fr; }
+  .fault-row em { grid-column:2; }
+  .calculator-form,.calc-result { grid-template-columns:1fr 1fr; padding-inline:16px; }
+  .manager-delivery { grid-template-columns:1fr; margin-inline:16px; }
+}
+@media(max-width:420px) {
+  .calculator-form,.calc-result { grid-template-columns:1fr; }
+  .demo-panel { min-height:390px; }
+}
+.ecosystem-clarity {
+  display:block;
+  max-width:720px;
+  margin-top:14px;
+  padding-left:13px;
+  border-left:2px solid var(--cyan);
+  color:var(--muted);
+  font-size:.74rem;
+}
