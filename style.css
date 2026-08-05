@@ -1789,3 +1789,30 @@ transparent 28rem),
     max-height:62%;
   }
 }
+/* Cards principais alinhados no mesmo esquadro. */
+@media(min-width:1041px) {
+  .hero-products {
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    align-items:stretch;
+  }
+  .hero-product,
+  .hero-manager,
+  .hero-obd {
+    min-height:500px;
+    height:100%;
+  }
+  .hero-manager .manager-showcase {
+    height:62%;
+  }
+  .hero-manager::after {
+    background:linear-gradient(180deg,transparent 20%,rgba(8,17,32,.2) 42%,#081120 68%);
+  }
+  .hero-obd img {
+    top:18px;
+    width:min(500px,112%);
+    max-height:65%;
+  }
+  .hero-product strong {
+    font-size:clamp(2.75rem,3vw,3.4rem);
+  }
+}
