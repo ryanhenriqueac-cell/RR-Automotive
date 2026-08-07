@@ -1961,3 +1961,51 @@ transparent 28rem),
   color:var(--muted);
   font-size:.74rem;
 }
+
+/* Correcao exclusiva da secao inicial em celulares. */
+@media (max-width: 680px) {
+  .hero {
+    width: 100%;
+    min-width: 0;
+    min-height: auto;
+    grid-template-columns: minmax(0, 1fr);
+    align-items: stretch;
+    gap: 32px;
+    padding: 94px 16px 48px;
+    overflow: hidden;
+  }
+
+  .hero-copy,
+  .hero-products,
+  .hero-product {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .hero-copy h1 {
+    max-width: 100%;
+    font-size: clamp(3.15rem, 14vw, 4.8rem);
+  }
+
+  .hero-copy p,
+  .hero-actions,
+  .hero-metrics {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .hero-products {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 16px;
+  }
+
+  .hero-product,
+  .hero-manager,
+  .hero-obd {
+    min-height: 260px;
+  }
+
+  .hero-product strong {
+    font-size: clamp(2rem, 10vw, 2.75rem);
+  }
+}
